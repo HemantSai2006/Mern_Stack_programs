@@ -1,0 +1,16 @@
+var studentName = "Hemanth";
+var age = 19;
+var isStudent = true;
+var valueAny = "Hello";
+valueAny = 42;
+var valueUnknown = "Typescript";
+valueUnknown = 100;
+var notUsed = undefined;
+var nothing = null;
+console.log("Name:" + studentName);
+console.log("Age:" + age);
+console.log("Is Student:" + isStudent);
+console.log("Value Any:" + valueAny);
+console.log("Value Unknown:" + valueUnknown);
+console.log("Not Used:" + notUsed);
+console.log("Nothing:" + nothing);

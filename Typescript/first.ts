@@ -1,0 +1,16 @@
+let studentName: string = "Hemanth";
+let age: number = 19;
+let isStudent: boolean = true;
+let valueAny: any = "Hello";
+valueAny = 42;
+let valueUnknown: unknown = "Typescript";
+valueUnknown = 100;
+let notUsed: void = undefined;
+let nothing: null = null;
+console.log("Name:"+studentName);
+console.log("Age:"+age);
+console.log("Is Student:"+isStudent);
+console.log("Value Any:"+valueAny);
+console.log("Value Unknown:"+valueUnknown);
+console.log("Not Used:"+notUsed);
+console.log("Nothing:"+nothing);
