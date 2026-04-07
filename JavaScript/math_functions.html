@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="abc"></h1>
+    <p id="efg"></p>
+    <script>
+        document.getElementById("abc").innerHTML = "Welcome to JavaScript<br>";
+
+        window.alert("Welcome to JavaScriptObjects");
+        let number=25.21;
+        let round = Math.round(number);
+        let floor = Math.floor(number);
+        let ceil = Math.ceil(number);
+        let pow = Math.pow(2,3);
+        let max = Math.max(10,20,30,40,50);
+        let min = Math.min(10,20,30,40,50);
+        let random = Math.random();
+        let abs = Math.abs(-55);
+        let log = Math.log(10);
+        let exp = Math.exp(2);
+        let squareroot = Math.sqrt(16);
+        let string = "Hemanth Sai";
+        let length = string.length;
+        let uppercase = string.toUpperCase();
+        let lowercase = string.toLowerCase();
+        let substring = string.substring(0,6);
+        document.getElementById("abc").innerHTML += "<b>Rounded Value: " + round + "<br>" +
+                                                  "Floored Value: " + floor + "<br>" +
+                                                  "Ceiled Value: " + ceil + "<br>" +
+                                                  "Power Value (2^3): " + pow + "<br>" +
+                                                  "Square Root of 16: " + squareroot + "</br>";
+
+          document.getElementById("efg").innerHTML ="<b>Length: " + length + "<br>" +
+                                                    "Uppercase: " + uppercase + "<br>" +
+                                                     "Lowercase: " + lowercase + "<br>" +
+                                                     "Substring: " + substring;
+    </script>
+</body>
+</html>

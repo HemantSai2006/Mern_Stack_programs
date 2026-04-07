@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Largest Numbers</title>
+</head>
+<body>
+    <label>Enter 1st number</label>
+    <input type="number" id="num1">
+    <label>Enter 2nd number</label>
+    <input type="number" id="num2">
+    <label>Enter 3rd number</label>
+    <input type="number" id="num3">
+</body>
+<script>
+    let a=Number(window.prompt("Enter 1st number:"));
+    let b=Number(window.prompt("Enter 2nd number:"));  
+    let c=Number(window.prompt("Enter 3rd number:"));
+    if(a > b && a > c){
+        document.write("Largest number: "+a);
+        alert(a + " is the largest number");
+    }
+    else if(b > a && b > c){
+        document.write("Largest number:"+b);
+        alert(b + " is the largest number");
+    }
+    
+    else if(c > a && c > b){
+        document.write("Largest number:"+c);
+        alert(c + " is the largest number");
+    }
+    else{
+        document.write("All are equal");
+        alert("All numbers are equal");
+    }
+</script>
+</html>

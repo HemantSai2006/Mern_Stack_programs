@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Factorial and Fibonacci</title>
+</head>
+<script>
+    function fact(n) {
+        if (n == 0 || n == 1)
+            return 1;
+        return n * fact(n - 1);
+    }
+
+    function fibon(n) {
+        let a = 0;
+        let b = 1;
+        let series = "0 1 ";
+        for (let i = 2; i < n; i++) {
+            let res = a + b;
+            series += res + " ";
+            a = b;
+            b = res;
+        }
+        return series;
+    }
+
+    function calculate() {
+        let n = parseInt(document.getElementById("num").value);
+
+        // check which radio button is selected
+        let choice = document.querySelector('input[name="cal"]:checked');
+
+        if (!choice) {
+            alert("Please select either Fibonacci or Factorial!");
+            return;
+        }
+
+        if (choice.id === "factorial") {
+            let res = fact(n);
+            document.getElementById("res").innerHTML = "Factorial of " + n + " is: " + res;
+            document.getElementById("res1").innerHTML = "";
+        } else if (choice.id === "fibonacci") {
+            let ser = fibon(n);
+            document.getElementById("res1").innerHTML = "Fibonacci sequence of " + n + " numbers is: " + ser;
+            document.getElementById("res").innerHTML = "";
+        }
+    }
+</script>
+<body>
+    <label>Enter the value of n: </label>
+    <input type="number" id="num"><br><br>
+
+    <label>Fibonacci sequence</label>
+    <input type="radio" name="cal" id="fibonacci"><br>
+
+    <label>Factorial number</label>
+    <input type="radio" name="cal" id="factorial"><br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h5 id="res"></h5>
+    <h5 id="res1"></h5>
+</body>
+</html>

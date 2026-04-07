@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Assignment Submission Form</title>
+<style>
+       
+
+        td {
+            padding: 8px 12px;  
+        }
+
+       
+    </style>
+   
+</head>
+ 
+<body>
+    <center>
+
+    <form>
+        <tr>
+        <td><img src="aditya_logo.webp" height="60"</td>
+        <h2>Assignment Submission Form</h2>
+        </tr>
+
+        <table>
+            
+      
+    
+            <tr>
+                <td><label>Student Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label>Student ID:</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email"></td>
+            </tr>
+
+            <tr>
+                <td><label>Date of Birth:</label></td>
+                <td><input type="date"></td>
+                    
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input type = "radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Other">Other
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Course Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label>Assessment Title:</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label>Submission Date:</label></td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td><label>Grade Level:</label></td>
+                <td>
+                <select>
+                <option value="">Select</option>
+                <option>Undergraduate</option>
+                <option>Graduate</option>
+                <option>Postgraduate</option>
+             </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Department:</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label>Comments / Notes:</label></td>
+                <td>
+                    <textarea rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Upload Assessment File:</label></td>
+                <td><input type="file"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="button" onclick="submitAssessment()">Submit Assessment</button>
+                </td>
+            </tr>
+        </table>
+
+        <p id="message"></p>
+    </form>
+    </center>
+
+    <script>
+        function submitAssessment() {
+            document.getElementById('message').innerHTML =
+                'Assessment Successfully Submitted!';
+        }
+    </script>
+
+</body>
+</html>

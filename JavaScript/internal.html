@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+   
+    <script>
+        function internal() {
+            alert("This is an internal JavaScript example.");
+        }
+        function writeDocument() {
+            document.write("TThis output is displayed using document.write() method.");
+        }
+        function showInnerHTML(){
+            document.getElementById("output").innerHTML="This output is displayed using innerHTML";
+        }
+        function showConsole(){
+            console.log("This output is displayed in the console using console.log()");
+        }
+    </script>
+    <style>
+        button{
+            font-size:20px;
+        }
+        body{
+            background-color:rgb(120,324,124);
+            text-align:center;
+        }
+        </style>
+</head>
+<body>
+    <h1>Internal JavaScript Example</h1>
+    <button onclick="internal()">
+         Submit
+    </button>
+    <button onclick="writeDocument()">
+        Write Document
+    </button>
+    <button onclick="showInnerHTML()">
+        Show InnerHTML
+    </button>
+    <button onclick="showConsole()">
+        Show Console
+    </button>
+    <div id="output"></div>
+</body>
+</html>
